@@ -27,7 +27,7 @@ function find($table = null, $id = null){
     $found = null;
 
     try{
-        id($id){
+        if($id){
             $sql = "SELECT * FROM " . $table . "WHERE id = " . $id;
             $result = $database->query($sql);
 
